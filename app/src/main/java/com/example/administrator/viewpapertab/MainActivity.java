@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSelectedListener {
 
-    private ViewPager viewPager;
+    private   ViewPager viewPager;
     private   TabLayout tableLayout;
 
     ViewPaperAdapter viewPaperAdapter;
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements TabLayout.OnTabSe
         tableLayout = findViewById(R.id.tablayout);
         tableLayout.addTab(tableLayout.newTab());
         tableLayout.addTab(tableLayout.newTab());
-        tableLayout.setupWithViewPager(viewPager);//和viewpaper
+        tableLayout.setupWithViewPager(viewPager);//和viewpaper进行联动
         tableLayout.addOnTabSelectedListener(this);
 
         list.add(new Fragment1());

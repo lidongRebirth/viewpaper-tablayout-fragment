@@ -11,8 +11,6 @@ import java.util.List;
 public class ViewPaperAdapter extends FragmentStatePagerAdapter {
 
     List<Fragment> list=new ArrayList<>();
-    Fragment1 fragment1 =new Fragment1();
-    Fragment2 fragment2 = new Fragment2();
     private FragmentManager fragmetnmanager;  //创建FragmentManager
     private List<String>mTitles=new ArrayList<>();
 
